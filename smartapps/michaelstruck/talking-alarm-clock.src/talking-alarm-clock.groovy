@@ -1337,4 +1337,3 @@ private def textHelp() {
         "speak a summary of the alarms enabled or disabled without having to go into the application itself. This " +
         "functionality is optional and can be configured from the main setup page."
 }
-
