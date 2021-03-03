@@ -16,10 +16,13 @@
 metadata {
 	definition (name: "Life360 Presence Sensor", namespace: "ABETOWNCARR", author: "Michael Barksdale") {
 		capability "Acceleration Sensor"
+		capability "Audio Notification"
+		capability "Estimated Time Of Arrival"
 		capability "Geolocation"
 		capability "Location Mode"
 		capability "Polling"
 		capability "Presence Sensor"
+		
 	}
 
 
@@ -36,6 +39,7 @@ metadata {
 def parse(String description) {
 	log.debug "Parsing '${description}'"
 	// TODO: handle 'acceleration' attribute
+	// TODO: handle 'eta' attribute
 	// TODO: handle 'latitude' attribute
 	// TODO: handle 'longitude' attribute
 	// TODO: handle 'method' attribute
@@ -46,10 +50,26 @@ def parse(String description) {
 	// TODO: handle 'lastUpdateTime' attribute
 	// TODO: handle 'mode' attribute
 	// TODO: handle 'presence' attribute
+	// TODO: handle 'shock' attribute
 
 }
 
 // handle commands
+def playTrack() {
+	log.debug "Executing 'playTrack'"
+	// TODO: handle 'playTrack' command
+}
+
+def playTrackAndResume() {
+	log.debug "Executing 'playTrackAndResume'"
+	// TODO: handle 'playTrackAndResume' command
+}
+
+def playTrackAndRestore() {
+	log.debug "Executing 'playTrackAndRestore'"
+	// TODO: handle 'playTrackAndRestore' command
+}
+
 def setMode() {
 	log.debug "Executing 'setMode'"
 	// TODO: handle 'setMode' command
